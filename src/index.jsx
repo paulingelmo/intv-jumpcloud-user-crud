@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from 'App'
+import App from 'components/App'
+import './sass/base.sass'
 
-const render = ReactDOM.render(<App />, document.getElementById('app'))
-
-render()
+ReactDOM.render(<App />, document.getElementById('app'))

@@ -1,0 +1,56 @@
+// Sizes  
+$layoutPadding: 20px
+$widthRestriction: 1240px
+
+// Colors
+$black: #333333
+$grey: #666666
+$red: #c12917
+$blue: #318ce7
+$lightGrey: #fafafa
+$white: #ffffff
+
+// Media Queries
+@mixin tablet
+  @media screen and (max-width: 900px)
+    @content
+
+@mixin mobile
+  @media screen and (max-width: 500px)
+    @content
+
+// Elements
+@mixin h1
+  font-size: 40px
+  font-weight: 600
+
+@mixin h2
+  font-size: 32px
+  font-weight: 600
+
+@mixin h3
+  font-size: 24px
+  font-weight: 600
+
+@mixin h4
+  font-size: 20px
+  font-weight: 600
+
+@mixin p
+  font-size: 16px
+  font-weight: 400
+
+@mixin button
+  outline: none
+  border: none
+  margin: 0px 0px
+  padding: 0px 0px
+  text-align: unset
+  background-color: unset
+  cursor: pointer
+
+// Classes
+.containerBase
+  max-width: $widthRestriction
+  margin-left: auto
+  margin-right: auto
